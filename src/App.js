@@ -4,6 +4,7 @@ import "./App.css";
 import {originals,actions,ComedyMovies,HorrorMovies,ActionMovies,RomanceMovies,Documentaries} from './urls'
 import Banner from "./Component/Banner/Banner";
 import RowPost from "./Component/RowPost/RowPost";
+import Footer from "./Component/Footer/footer"
 function App() {
   return (
     <div className="App">
@@ -16,7 +17,7 @@ function App() {
       <RowPost url={ActionMovies} title="Action Movies" isSmall />
       <RowPost url={RomanceMovies} title="Romance Movies" isSmall />
       <RowPost url={Documentaries} title="Documentaries" isSmall />
-     
+      <Footer />
     </div>
   );
 }
